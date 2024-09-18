@@ -2,12 +2,13 @@
 
 {% block content %}
 
-<h1>Welcome to <em>Moolah Manager!</em> <span style='font-size:54px;'>&#128184;</span></h1>
-<p>Tired of not knowing how to budget or where your money is going?</p>
-<p>Let Moolah Manager help you save that cheddar!</p>
-<p>
-  <a href="{% url 'user_profile' %}" class="btn btn-lg btn-success">Start Budgeting!</a>
-</p>
-
+<div class="py-5">
+	<h1>Welcome to <em>Moolah Manager!</em> <span style='font-size:54px;'>&#128184;</span></h1>
+	<p>Tired of not knowing how to budget or where your money is going?</p>
+	<p>Let Moolah Manager help you save that cheddar!</p>
+	<p>
+	  <a href="{% url 'user_profile' %}" class="btn btn-lg bg-success-subtle">Start Budgeting!</a>
+	</p>
+</div>
 
 {% endblock %}
