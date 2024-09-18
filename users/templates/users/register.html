@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card col-lg-9 p-3 m-3">
+	<h3>Create An Account</h3>
+	<hr>
+	<form method="POST" action="{% url 'register' %}">
+		{% csrf_token %}
+		<table>
+			{{ form.as_p }}
+		</table>
+
+		<input type="submit" value="Sign Up" />
+	</form>
+	<hr>
+	<div>
+		<p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+	</div>
+</div>
+{% endblock %}
