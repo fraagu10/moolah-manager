@@ -4,7 +4,7 @@
 <div class="card col-lg-9 p-3 m-3">
 	<h3>Create An Account</h3>
 	<hr>
-	<form method="POST" action="{% url 'register' %}">
+	<form method="POST" novalidate>
 		{% csrf_token %}
 		<table>
 			{{ form.as_p }}
